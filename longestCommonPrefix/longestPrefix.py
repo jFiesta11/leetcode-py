@@ -1,14 +1,9 @@
-strings = ["flower", "flow", "floght"]
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        result = ""
 
-result =""
-
-for i in range(len(strings[0])):
-
-    currentChar = strings[0][i]
-    if all(i < len(x) and x[i] == currentChar for x in strings):
-        result+=currentChar
-    else:
-        break
-
-print(result)
-
+        for i in range(len(strs[0])):
+            currentChar = strs[0][i]
+            if all( i < len(c) and c[i] == currentChar for c in strs):
+                result += currentChar 
+        return result       

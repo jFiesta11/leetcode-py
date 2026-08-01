@@ -7,3 +7,4 @@ class Solution(object):
                 result += strs[0][i]
             else:
                 break
+        return result
